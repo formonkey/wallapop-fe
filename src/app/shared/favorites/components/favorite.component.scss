@@ -1,0 +1,49 @@
+.walla-favorite {
+  &__data {
+    @apply py-5;
+    @apply mx-auto;
+
+    h1 {
+      @apply text-base;
+      @apply font-semibold;
+      @apply text-gray-700;
+      @apply tracking-wide;
+
+      font-size: 1.2rem;
+    }
+
+    p {
+      @apply pt-2;
+      @apply pb-5;
+      @apply w-full;
+      @apply text-gray-500;
+      @apply font-extralight;
+
+      font-size: .8rem;
+    }
+  }
+
+  &__empty {
+    @apply py-5;
+    @apply mx-auto;
+
+    h1 {
+      @apply text-base;
+      @apply text-center;
+      @apply font-semibold;
+      @apply text-gray-700;
+      @apply tracking-wide;
+
+      font-size: 1.6rem;
+    }
+
+    p {
+      @apply pt-2;
+      @apply pb-5;
+      @apply w-full;
+      @apply text-center;
+      @apply text-gray-500;
+      @apply font-extralight;
+    }
+  }
+}

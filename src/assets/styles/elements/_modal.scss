@@ -1,0 +1,45 @@
+.walla-modal {
+  @apply fixed;
+  @apply z-10;
+  @apply inset-0;
+  @apply overflow-y-auto;
+
+  & > div {
+    @apply flex;
+    @apply items-end;
+    @apply justify-center;
+    @apply min-h-screen;
+    @apply pt-4;
+    @apply px-4;
+    @apply pb-20;
+    @apply text-center;
+    @apply block;
+    @apply p-0;
+  }
+
+  &__backdrop {
+    @apply fixed;
+    @apply inset-0;
+    @apply bg-gray-500;
+    @apply bg-opacity-75;
+    @apply transition-opacity;
+  }
+
+  &__content {
+    @apply inline-block;
+    @apply align-bottom;
+    @apply bg-grey;
+    @apply rounded-lg;
+    @apply px-2;
+    @apply pt-5;
+    @apply pb-4;
+    @apply text-left;
+    @apply overflow-hidden;
+    @apply shadow-xl;
+    @apply transform;
+    @apply transition-all;
+    @apply my-8;
+    @apply align-middle;
+    @apply w-4/12;
+  }
+}

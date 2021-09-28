@@ -1,0 +1,15 @@
+<walla-container>
+  <ng-container *ngIf="small; then listTmpl else gridTmpl"></ng-container>
+
+  <ng-template #gridTmpl>
+    <ul role="list" class="walla-product-list">
+      <ng-container *ngFor="let product of products">
+        <walla-card (handleClick)="onClickFavorite($event)" [showHeaderAction]="showFavorite" [data]="product"></walla-card>
+      </ng-container>
+    </ul>
+  </ng-template>
+
+  <ng-template #listTmpl>
+    <walla-list-item [data]="products" (handleClick)="onClickRemoveFavorite($event)"></walla-list-item>
+  </ng-template>
+</walla-container>

@@ -1,0 +1,49 @@
+.walla-home {
+  @apply pb-5;
+  @apply w-full;
+  @apply bg-white;
+  @apply space-y-3;
+  @apply text-center;
+
+  .form {
+    @apply mx-auto;
+    @apply max-w-2xl;
+  }
+
+  &__list {
+    @apply pb-10;
+    @apply text-center;
+  }
+
+  &__favorite {
+    @apply flex;
+    @apply mt-10;
+    @apply justify-end;
+
+    margin-bottom: -50;
+  }
+
+  &__empty {
+    @apply py-10;
+    @apply mx-auto;
+
+    h1 {
+      @apply text-base;
+      @apply text-center;
+      @apply font-semibold;
+      @apply text-gray-700;
+      @apply tracking-wide;
+
+      font-size: 1.6rem;
+    }
+
+    p {
+      @apply pt-2;
+      @apply pb-5;
+      @apply w-full;
+      @apply text-center;
+      @apply text-gray-500;
+      @apply font-extralight;
+    }
+  }
+}

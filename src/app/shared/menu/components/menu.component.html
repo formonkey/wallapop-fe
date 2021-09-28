@@ -1,0 +1,29 @@
+<div class="relative bg-white border border-b border-grey">
+  <div class="w-full">
+    <div class="flex justify-between items-center py-2 md:justify-start md:space-x-10 px-20">
+      <div class="flex justify-start lg:w-0 lg:flex-1">
+        <a [routerLink]="['']">
+          <img class="h-8 w-auto sm:h-10" src="https://es.wallapop.com/images/icons/ic-logo-web.svg" alt="">
+        </a>
+      </div>
+      <nav class="hidden md:flex">
+        <div class="relative">
+        </div>
+      </nav>
+      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+        <nav class="hidden md:flex mr-10">
+          <div class="relative">
+            <walla-menu-item
+              link="admin"
+              label="My zone"
+              img="https://cdn.wallapop.com/images/13/16/z9/__/c13p72189399/i408507396.jpg?pictureSize=W640"
+            >
+            </walla-menu-item>
+          </div>
+        </nav>
+
+        <walla-btn icon="plus" label="Add product"></walla-btn>
+      </div>
+    </div>
+  </div>
+</div>

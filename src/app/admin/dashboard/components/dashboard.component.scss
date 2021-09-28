@@ -1,0 +1,49 @@
+.walla-dashboard {
+  @apply py-5;
+  @apply flex;
+  @apply flex-col;
+
+  .header {
+    @apply flex;
+    @apply pt-10;
+
+    h1 {
+      @apply text-base;
+      @apply font-semibold;
+      @apply text-gray-700;
+      @apply tracking-wide;
+
+      font-size: 2rem;
+    }
+
+    p {
+      @apply py-2;
+      @apply w-full;
+      @apply text-gray-500;
+      @apply font-extralight;
+    }
+
+    small {
+      @apply w-full;
+      @apply text-right;
+      @apply font-medium;
+      @apply text-primary;
+
+      walla-icon {
+        @apply mr-2;
+      }
+    }
+
+    div {
+      &:first-child {
+        @apply w-2/3;
+      }
+
+      &:last-child {
+        @apply flex;
+        @apply w-1/3;
+        @apply justify-end;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<ng-container *ngIf="form">
+  <form class="walla-input-filter" [formGroup]="form">
+    <div class="relative rounded-full">
+      <div class="absolute inset-y-0 left-0 flex items-center">
+        <select class="h-full h-12 py-0 pl-3 pr-7 bg-grey-dark text-md rounded-full cursor-pointer" formControlName="key">
+          <ng-container *ngFor="let filter of data">
+            <option [value]="filter.value">{{ filter.label }}</option>
+          </ng-container>
+        </select>
+      </div>
+      <input [type]="type" formControlName="search" class="block h-12 w-full bg-grey-dark text-md rounded-full" />
+      <div class="absolute inset-y-0 right-0 pr-1 flex items-center cursor-pointer space-x-2">
+        <ng-container *ngIf="!disabled">
+          <walla-btn type="transparent" icon="clear" (handleClick)="onClear()"></walla-btn>
+        </ng-container>
+        <walla-btn [disabled]="disabled" icon="search" (handleClick)="onClick()"></walla-btn>
+      </div>
+    </div>
+  </form>
+</ng-container>

@@ -1,0 +1,22 @@
+.walla-menu-item {
+  @apply flex;
+  @apply space-x-4;
+
+  &:hover {
+    @apply cursor-pointer;
+  }
+
+  img {
+    @apply h-8;
+    @apply w-8;
+    @apply rounded-full;
+  }
+
+  span {
+    @apply mt-1;
+    @apply text-sm;
+    @apply text-base;
+    @apply font-normal;
+    @apply text-gray-700;
+  }
+}

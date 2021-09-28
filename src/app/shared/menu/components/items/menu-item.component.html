@@ -1,0 +1,8 @@
+<a [routerLink]="link" class="walla-menu-item">
+  <ng-container *ngIf="img">
+    <img [src]="img" [alt]="img" />
+  </ng-container>
+  <span>
+    {{ label }}
+  </span>
+</a>

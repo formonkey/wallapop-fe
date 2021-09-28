@@ -1,0 +1,36 @@
+@import "tailwindcss/utilities";
+
+$configuration: (
+  themes: (
+    colors: (
+      white: theme("colors.white"),
+      danger: theme('colors.danger'),
+      primary: theme("colors.primary"),
+      tertiary: theme("colors.tertiary"),
+      disabled: theme("colors.disabled"),
+      grey: theme("colors.grey.DEFAULT"),
+      secondary: theme("colors.secondary"),
+      grey-dark: theme('colors.grey.dark'),
+    ),
+  ),
+);
+
+@each $theme-name, $theme-content in map-get($configuration, "themes") {
+  @each $key, $value in $theme-content {
+    .text-#{"" + $key} {
+      color: $value;
+    }
+
+    .bg-#{"" + $key} {
+      background-color: $value;
+    }
+
+    .border-#{"" + $key} {
+      border-color: $value;
+    }
+
+    .hover\:text-#{"" + $key}:hover {
+      color: $value;
+    }
+  }
+}

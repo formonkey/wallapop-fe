@@ -1,0 +1,17 @@
+<button
+  type="button"
+  (click)="onClick()"
+  aria-expanded="false"
+  [class.no-label]="!label"
+  [class.cursor-pointer]="!disabled"
+  [class.cursor-not-allowed]="disabled"
+  class="walla-btn {{ size }} text-{{ color }} bg-{{ background }}"
+>
+  <ng-container *ngIf="icon">
+    <walla-icon [icon]="icon"></walla-icon>
+  </ng-container>
+
+  <span>
+    {{ label }}
+  </span>
+</button>

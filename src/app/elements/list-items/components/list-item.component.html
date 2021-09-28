@@ -1,0 +1,12 @@
+<div class="walla-list-item" *ngFor="let element of data">
+  <div class="media">
+    <img [src]="element.image" [alt]="element.image">
+  </div>
+  <div class="info">
+    <h4>{{ element.title }}</h4>
+    <p>{{ element.description }}</p>
+  </div>
+  <div class="action">
+    <walla-btn size="sm" type="transparent" icon="clear" (handleClick)="handleClick.emit(element)"></walla-btn>
+  </div>
+</div>

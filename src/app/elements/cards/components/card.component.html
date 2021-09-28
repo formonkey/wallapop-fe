@@ -1,0 +1,19 @@
+<li class="walla-card">
+  <div class="media relative">
+    <ng-container *ngIf="showHeaderAction">
+      <div class="absolute inset-y-0 right-0 pt-2 pr-2">
+        <walla-btn (handleClick)="onClick()" [type]="data.favorite ? 'favorite' : 'no-favorite'" size="sm" icon="like"></walla-btn>
+      </div>
+    </ng-container>
+    <img [src]="data.image" [alt]="data.image">
+  </div>
+  <p class="price">
+    {{ data.price }}
+  </p>
+  <p class="title">
+    {{ data.title }}
+  </p>
+  <p class="description">
+    {{ data.description }}
+  </p>
+</li>

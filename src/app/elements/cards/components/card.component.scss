@@ -1,0 +1,55 @@
+.walla-card {
+  @apply p-2;
+  @apply relative;
+  @apply bg-white;
+  @apply rounded-lg;
+
+  .media {
+    @apply group;
+    @apply block;
+    @apply w-full;
+    @apply aspect-h-7;
+    @apply rounded-lg;
+    @apply aspect-w-10;
+    @apply bg-gray-100;
+
+    img {
+      @apply w-full;
+      @apply rounded-lg;
+      @apply object-cover;
+      @apply pointer-events-none;
+      @apply group-hover:opacity-75;
+
+      height: 300px;
+    }
+  }
+
+  .price {
+    @apply mt-2;
+    @apply block;
+    @apply text-xl;
+    @apply truncate;
+    @apply font-medium;
+    @apply text-gray-900;
+    @apply pointer-events-none;
+  }
+
+  .title {
+    @apply block;
+    @apply text-sm;
+    @apply font-medium;
+    @apply text-gray-500;
+    @apply pointer-events-none;
+  }
+
+  .description {
+    @apply block;
+    @apply text-xs;
+    @apply font-light;
+    @apply line-clamp-3;
+    @apply text-gray-500;
+    @apply pointer-events-none;
+
+    height: 50px;
+  }
+}

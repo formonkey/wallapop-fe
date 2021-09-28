@@ -1,0 +1,28 @@
+.walla-btn {
+  @apply group;
+  @apply text-base;
+  @apply font-normal;
+  @apply inline-flex;
+  @apply rounded-full;
+  @apply items-center;
+
+  z-index: 20;
+
+  &.sm {
+    @apply items-center;
+
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  &.md {
+    @apply py-2;
+    @apply px-4;
+  }
+
+  &:not(.no-label) {
+    walla-icon {
+      @apply mr-3;
+    }
+  }
+}

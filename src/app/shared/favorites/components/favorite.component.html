@@ -1,0 +1,24 @@
+<ng-container *ngIf="products?.length; then listTmpl else emptyTmpl"></ng-container>
+
+<ng-template #listTmpl>
+
+  <div class="walla-favorite__data">
+    <walla-container>
+      <h1>Our favorites</h1>
+      <p>This is your list of favorites, these elements are only visible as long as the page does not reload</p>
+    </walla-container>
+
+    <walla-product-list [small]="true" [showFavorite]="false" [products]="products" (handleClick)="removeFavorite($event)"></walla-product-list>
+  </div>
+</ng-template>
+
+<ng-template #emptyTmpl>
+  <walla-container>
+    <div class="walla-favorite__empty">
+      <h1>There are no favorites</h1>
+      <p>To add an item as a favorite, you have to click on the button of the selected item</p>
+
+      <walla-empty></walla-empty>
+    </div>
+  </walla-container>
+</ng-template>

@@ -1,0 +1,7 @@
+.walla-product-list {
+  @apply grid;
+  @apply py-10;
+  @apply gap-x-8;
+  @apply gap-y-6;
+  @apply grid-cols-3;
+}
